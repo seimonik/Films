@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyApplicationFilms</string>
+    <string name="title">FilmKu</string>
+    <string name="now_showing">Now showing</string>
+    <string name="spiderman">SpiderMan: No Way Home</string>
+    <string name="eternals">Eternals</string>
+    <string name="shang">Shang-Chi</string>
+</resources>

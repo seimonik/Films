@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="60"
+        android:text="@string/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/title"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/now_showing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/now_showing"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Title"
+        android:layout_marginLeft="24"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/title"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/spiderman_image"
+        android:layout_width="143sp"
+        android:layout_height="212sp"
+        android:background="@drawable/spiderman"
+        app:layout_constraintTop_toBottomOf="@id/now_showing"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:id="@+id/spiderman_text"
+        android:layout_width="143sp"
+        android:layout_height="wrap_content"
+        android:text="@string/spiderman"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spiderman_image"
+        android:layout_marginLeft="24"
+        android:layout_marginTop="10"
+        android:textSize="14sp"
+        android:textColor="@color/title"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9.1/10 IMDb"
+        app:layout_constraintTop_toBottomOf="@id/spiderman_text"
+        app:layout_constraintLeft_toRightOf="@id/zvezda_spider"
+        android:layout_marginLeft="5"
+        />
+    <ImageView
+        android:id="@+id/zvezda_spider"
+        android:layout_width="12sp"
+        android:layout_height="12sp"
+        app:layout_constraintTop_toBottomOf="@id/spiderman_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24"
+        android:layout_marginTop="3"
+        android:background="@drawable/zvezda"
+        />
+
+    <ImageView
+        android:id="@+id/eternals_image"
+        android:layout_width="143sp"
+        android:layout_height="212sp"
+        android:background="@drawable/eternals"
+        app:layout_constraintTop_toBottomOf="@id/now_showing"
+        app:layout_constraintLeft_toRightOf="@id/spiderman_image"
+        android:layout_marginLeft="24sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:id="@+id/eternals_text"
+        android:layout_width="143sp"
+        android:layout_height="wrap_content"
+        android:text="@string/eternals"
+        app:layout_constraintLeft_toRightOf="@id/spiderman_text"
+        app:layout_constraintTop_toBottomOf="@id/eternals_image"
+        android:layout_marginLeft="24"
+        android:textSize="14sp"
+        android:textColor="@color/title"
+        android:textStyle="bold"
+        android:layout_marginTop="10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9.5/10 IMDb"
+        app:layout_constraintTop_toBottomOf="@id/eternals_text"
+        app:layout_constraintLeft_toRightOf="@id/zvezda_eternals"
+        android:layout_marginLeft="5"
+        />
+
+    <ImageView
+        android:id="@+id/zvezda_eternals"
+        android:layout_width="12sp"
+        android:layout_height="12sp"
+        app:layout_constraintTop_toBottomOf="@id/eternals_text"
+        app:layout_constraintLeft_toRightOf="@id/spiderman_text"
+        android:layout_marginLeft="24"
+        android:layout_marginTop="3"
+        android:background="@drawable/zvezda"
+        />
+
+    <ImageView
+        android:id="@+id/shangchi_image"
+        android:layout_width="143sp"
+        android:layout_height="212sp"
+        android:background="@drawable/shangchi"
+        app:layout_constraintTop_toBottomOf="@id/now_showing"
+        app:layout_constraintLeft_toRightOf="@id/eternals_image"
+        android:layout_marginLeft="24sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:id="@+id/shangchi_text"
+        android:layout_width="143sp"
+        android:layout_height="wrap_content"
+        android:text="@string/shang"
+        app:layout_constraintLeft_toRightOf="@id/eternals_text"
+        app:layout_constraintTop_toBottomOf="@id/eternals_image"
+        android:layout_marginLeft="24"
+        android:textSize="14sp"
+        android:textColor="@color/title"
+        android:textStyle="bold"
+        android:layout_marginTop="10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8,1/10 IMDb"
+        app:layout_constraintTop_toBottomOf="@id/shangchi_text"
+        app:layout_constraintLeft_toRightOf="@id/zvezda_shang"
+        android:layout_marginLeft="5"
+        />
+
+    <ImageView
+        android:id="@+id/zvezda_shang"
+        android:layout_width="12sp"
+        android:layout_height="12sp"
+        app:layout_constraintTop_toBottomOf="@id/shangchi_text"
+        app:layout_constraintLeft_toRightOf="@id/eternals_text"
+        android:layout_marginLeft="24"
+        android:layout_marginTop="3"
+        android:background="@drawable/zvezda"
+        />
+    <TextView
+        android:id="@+id/popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/zvezda_spider"
+        android:layout_marginLeft="24"
+        android:layout_marginTop="24"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/title"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:id="@+id/venom_image"
+        android:layout_width="143sp"
+        android:layout_height="212sp"
+        android:background="@drawable/shangchi"
+        app:layout_constraintTop_toBottomOf="@id/popular"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24sp"
+        android:layout_marginTop="10sp"
+        />
+    <TextView
+        android:id="@+id/venom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venom Let There \nBe Carnage"
+        app:layout_constraintLeft_toRightOf="@id/venom_image"
+        app:layout_constraintTop_toBottomOf="@id/popular"
+        android:layout_marginTop="5"
+        android:layout_marginLeft="24"
+        android:textSize="14sp"
+        android:textColor="@color/title"
+        android:textStyle="bold"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
